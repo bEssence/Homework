@@ -18,13 +18,12 @@ bool userWon = false;
 while (!userWon)
 {
     bool isInt = false;
-    Console.WriteLine();
-    Console.WriteLine("Введите ваше число.");
+    Console.WriteLine("\nВведите ваше число.");
 
     isInt = int.TryParse(Console.ReadLine(), out userNumber);
     if (!isInt)
     {
-        Console.WriteLine("\nВы ввели не число, либо число с плавающей точкой.\n" +
+        Console.WriteLine("Вы ввели не число, либо число с плавающей точкой.\n" +
                           "Попробуйте снова.");
         continue;
     }
@@ -53,7 +52,5 @@ while (!userWon)
     {
         Console.WriteLine("Ваше число больше загаданного.");
     }
-
-    Console.WriteLine();
 }
 Console.ReadLine();
