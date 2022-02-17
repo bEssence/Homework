@@ -25,7 +25,7 @@ while (!userWon)
     }
     else if (userNumber > 100 || userNumber <= 0)
     {
-        Console.WriteLine("Число выходит за гранцы промежутка, вы будете арестованы!");
+        Console.WriteLine("Число выходит за границы промежутка, вы будете арестованы!");
         continue;
     }
 
